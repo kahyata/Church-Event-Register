@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Church Event Sign-Up</title>
+    <link href="stylesheet.css" rel="stylesheet" type="text/css" >
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="title">Church Event Sign-Up</div>
+        <div class="content">
+            <form id ="signupForm">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">First Name</span>
+                        <input type="text" name="first_name" placeholder="Enter Your First Name" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Last Name</span>
+                        <input type="text" name="last_name" placeholder="Enter your last name" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Date of Birth</span>
+                        <input type="date" name="date_of_birth" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Street Address</span>
+                        <input type="text" name="street_address" placeholder="Enter your street address" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Postal Address</span>
+                        <input type="text" name="postal_address" placeholder="Enter your postal address">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">District</span>
+                        <input type="text" name="district" placeholder="Enter your district" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Province</span>
+                        <input type="text" name="province" placeholder="Enter your province" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Country</span>
+                        <input type="text" name="country" placeholder="Enter your country" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Denomination Name</span>
+                        <input type="text" name="denomination_name" placeholder="Enter denomination name">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Denomination Address</span>
+                        <input type="text" name="denomination_address" placeholder="Enter denomination address">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Phone</span>
+                        <input type="tel" name="phone_number" pattern="[0-9]{10}" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="email" name="email_address" placeholder="Enter your email" required>
+                    </div>
+                </div>
+                <div class="gender-details">
+                    <span class="gender-title">Gender</span>
+                    <div class="category">
+                        <label for="dot-1">
+                            <input type="radio" name="gender" id="dot-1" value="Male">
+                            <span class="gender">Male</span>
+                        </label>
+                        <label for="dot-2">
+                            <input type="radio" name="gender" id="dot-2" value="Female">
+                            <span class="gender">Female</span>
+                        </label>
+                        <label for="dot-3">
+                            <input type="radio" name="gender" id="dot-3" value="Prefer not to say">
+                            <span class="gender">Prefer not to say</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Sign Up">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="db.js"></script>
+</body>
+<script db.js></script>
+</html>
