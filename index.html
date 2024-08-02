@@ -11,7 +11,7 @@
     <div class="container">
         <div class="title">Church Event Sign-Up</div>
         <div class="content">
-            <form id ="signupForm">
+            <form id="signupForm" action="/submit_form" method="post">
                 <div class="user-details">
                     <div class="input-box">
                         <span class="details">First Name</span>
@@ -60,6 +60,43 @@
                     <div class="input-box">
                         <span class="details">Email</span>
                         <input type="email" name="email_address" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Employment Status</span>
+                        <select name="employment_status" id="employment_status" required>
+                            <option value="">Select employment status</option>
+                            <option value="Self employed">Self Employed</option>
+                            <option value="Employed">Employed</option>
+                            <option value="Student">Student</option>
+                        </select>
+                    </div>
+                    <div id="occupation_field" style="display:none;">
+                        <span class="details">Occupation</span>
+                        <input type="text" name="occupation" placeholder="Enter your occupation">
+                    </div>
+                    <div id="student_fields" style="display:none;">
+                        <div class="input-box">
+                            <span class="details">School</span>
+                            <input type="text" name="school" placeholder="Enter your school name">
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Year</span>
+                            <input type="text" name="academic_year" placeholder="Enter your current year">
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Program of Study</span>
+                            <input type="text" name="program_of_study" placeholder="Enter your program of study">
+                        </div>
+                    </div>
+                    
+                    <div class="input-box">
+                        <span class="details">Membership Status</span>
+                        <select name="membership_status" required>
+                            <option value="">Select membership status</option>
+                            <option value="member">Member</option>
+                            <option value="visitor">Visitor</option>
+                        </select>
+                    </div>
                     </div>
                 </div>
                 <div class="gender-details">
