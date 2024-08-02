@@ -33,3 +33,19 @@ document.addEventListener('DOMContentLoaded', () => {
       console.error('Form with id "signupForm" not found');
   }
 });
+
+document.getElementById('employment_status').addEventListener('change', function() {
+    var occupationField = document.getElementById('occupation_field');
+    var studentFields = document.getElementById('student_fields');
+    
+    if (this.value === 'employed') {
+        occupationField.style.display = 'block';
+        studentFields.style.display = 'none';
+    } else if (this.value === 'student') {
+        occupationField.style.display = 'none';
+        studentFields.style.display = 'block';
+    } else {
+        occupationField.style.display = 'none';
+        studentFields.style.display = 'none';
+    }
+});
